@@ -1,0 +1,22 @@
+{
+  "name": "CharlesTool",
+  "version": "0.1.0",
+  "summary": "A short description of CharlesTool.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kongyhui@163.com/CharlesTool",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kongyhui@163.com": "konghui@cdeledu.com"
+  },
+  "source": {
+    "git": "https://github.com/kongyhui@163.com/CharlesTool.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "CharlesTool/Classes/**/*"
+}

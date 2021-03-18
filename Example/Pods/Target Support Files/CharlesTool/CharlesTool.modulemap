@@ -1,0 +1,6 @@
+framework module CharlesTool {
+  umbrella header "CharlesTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

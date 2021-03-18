@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CharlesTool'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of CharlesTool.'
 
 # This description is used to generate tags and improve search results.
@@ -32,11 +32,20 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'CharlesTool/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'CharlesTool' => ['CharlesTool/Assets/*.png']
-  # }
+  s.resource = 'CharlesTool/Assets/*.*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Masonry', '>= 0.6.0'
+  s.dependency 'ReactiveCocoa', '2.3.1'
+  s.dependency 'JSONKit-NoWarning', '>= 1.2'
+  
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  
+  s.prefix_header_contents = '#define MAS_SHORTHAND',
+  '#define MAS_SHORTHAND_GLOBALS',
+  '#import <Masonry/Masonry.h>',
+  '#import <ReactiveCocoa/ReactiveCocoa.h>',
+  '#import <ReactiveCocoa/RACEXTScope.h>'
+
 end
