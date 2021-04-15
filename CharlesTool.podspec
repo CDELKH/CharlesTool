@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/kongyhui@163.com/CharlesTool'
+  s.homepage         = 'https://github.com/CDELKH/CharlesTool.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'kongyhui@163.com' => 'konghui@cdeledu.com' }
-  s.source           = { :git => 'https://github.com/kongyhui@163.com/CharlesTool.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/CDELKH/CharlesTool.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
@@ -40,7 +40,7 @@ TODO: Add long description of the pod here.
   s.dependency 'ReactiveCocoa', '2.3.1'
   s.dependency 'JSONKit-NoWarning', '>= 1.2'
   
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   
   s.prefix_header_contents = '#define MAS_SHORTHAND',
   '#define MAS_SHORTHAND_GLOBALS',
